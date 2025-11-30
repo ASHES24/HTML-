@@ -1,0 +1,26 @@
+/* Profile page styles (style.css) */
+:root{
+  --bg:#f3f6f9;
+  --card:#ffffff;
+  --accent:#0b6cf0;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Inter,Arial,sans-serif;background:var(--bg);margin:0;color:#0b1726}
+.container{max-width:900px;margin:0 auto;padding:0 18px}
+header{padding:28px 0;text-align:center}
+header h1{margin:0;font-size:1.6rem}
+header .tagline{color:var(--muted);margin-top:6px}
+main{padding:20px}
+.profile-box{width:80%;max-width:700px;margin:24px auto;padding:20px;background:var(--card);border:1px solid #e6eef6;border-radius:8px;display:flex;gap:18px;align-items:center}
+.profile-photo img{width:160px;height:160px;object-fit:cover;border-radius:12px;border:4px solid #fff;box-shadow:0 6px 18px rgba(11,108,240,0.08)}
+.profile-content h2{margin:0 0 8px 0;font-size:1.4rem}
+.profile-content .meta{color:var(--muted);margin:6px 0;font-size:0.95rem}
+.profile-content .bio{margin-top:10px;line-height:1.5;font-size:0.98rem}
+footer{padding:18px 0;text-align:center;color:var(--muted);font-size:0.95rem}
+
+/* Responsive adjustments */
+@media (max-width:700px){
+  .profile-box{flex-direction:column;align-items:center;text-align:center;width:94%}
+  .profile-photo img{width:140px;height:140px}
+}
