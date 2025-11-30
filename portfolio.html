@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ASHES24">
+  <meta name="description" content="Personal portfolio of ASHES24 — Computer Science student and aspiring intern.">
+  <meta name="keywords" content="portfolio, computer science, internship, ASHES24">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ASHES24 | Personal Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <div class="container" id="top">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">AR</div>
+        <div>
+          <h1 class="site-title">Ashiqur Rahman (ASHES24)</h1>
+          <div class="site-tag">Computer Science Student • Aspiring Software Intern</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="portfolio.html" class="active">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section bio" id="about">
+        <h2>About Me</h2>
+        <p>Hello — I'm Ashiqur, a Computer Science student preparing for internships in software development. I enjoy building clean, maintainable web applications and learning about networking and systems. I'm eager to contribute to real-world projects and grow as an engineer.</p>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <table class="table" aria-describedby="education">
+          <thead>
+            <tr><th>Degree</th><th>Institution</th><th>Year</th><th>Result</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>B.Sc. in Computer Science</td><td>AIUB</td><td>2022 - Present</td><td>Ongoing</td></tr>
+            <tr><td>HSC (Higher Secondary)</td><td>City College</td><td>2021</td><td>GPA 4.50</td></tr>
+            <tr><td>SSC (Secondary)</td><td>City High School</td><td>2019</td><td>GPA 5.00</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" id="contactForm" action="mailto:ashiqurrahman419@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" class="input" type="text" required placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" class="input" type="email" required placeholder="your.email@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" class="input" required placeholder="Write your message"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <div style="margin-top:16px;text-align:right"><a href="#top">Back to Top</a></div>
+    </main>
+
+    <footer>
+      <div>© 2025 Ashiqur Rahman — All Rights Reserved.</div>
+      <div style="margin-top:6px">
+        <a href="#">LinkedIn</a> • <a href="#">GitHub</a> • <a href="#">Email</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

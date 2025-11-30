@@ -1,0 +1,24 @@
+/* Portfolio stylesheet */
+:root{--primary:#0b6cf0;--muted:#6b7280;--bg:#f7f8fb;--card:#ffffff}
+*{box-sizing:border-box}
+body{font-family:Segoe UI,Inter,Arial,sans-serif;margin:0;background:var(--bg);color:#0b0b0b}
+.container{max-width:900px;margin:28px auto;padding:0 18px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--primary),#6f9cff);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.site-title{margin:0}
+.site-tag{color:var(--muted);font-size:13px}
+nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0}
+nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:6px}
+nav a.active{background:var(--primary);color:#fff}
+.main{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 8px 20px rgba(3,10,20,0.06)}
+.section{margin-bottom:18px}
+.section h2{margin:0 0 10px 0}
+.bio p{margin:0;color:#1f2937}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{border:1px solid #eef2f6;padding:8px;text-align:left}
+.contact-form{display:grid;gap:10px}
+.input,textarea{width:100%;padding:10px;border:1px solid #e6ecf3;border-radius:6px;font-size:14px}
+button{background:var(--primary);color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
+footer{margin-top:16px;text-align:center;color:var(--muted);font-size:14px}
+@media (max-width:640px){.header{flex-direction:column;align-items:flex-start}.logo{width:48px;height:48px}}
