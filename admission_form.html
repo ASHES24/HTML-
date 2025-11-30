@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="ASHES24">
+  <meta name="description" content="University Admission Form — collect personal, academic and document details for new applicants.">
+  <meta name="keywords" content="admission, university, application, form">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>University Admission Form</title>
+  <link rel="stylesheet" href="admission_form.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div class="logo">UA</div>
+        <div>
+          <h1>University Admission Form</h1>
+          <small class="site-tag">Please complete all required fields to apply</small>
+        </div>
+      </div>
+      <nav aria-label="breadcrumb">
+        <a href="portfolio.html">Home</a>
+      </nav>
+    </header>
+
+    <form id="admissionForm" action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="row">
+          <div>
+            <label for="firstName">First Name *</label>
+            <input id="firstName" name="firstName" type="text" required maxlength="40" placeholder="Given name">
+          </div>
+
+          <div>
+            <label for="lastName">Last Name *</label>
+            <input id="lastName" name="lastName" type="text" required maxlength="40" placeholder="Family name">
+          </div>
+
+          <div>
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+
+          <div>
+            <label for="dob">Date of Birth *</label>
+            <input id="dob" name="dob" type="date" required>
+          </div>
+
+          <div>
+            <label>Gender *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="female" required> Female</label>
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="text" maxlength="15" placeholder="Optional">
+            <small class="note">Only digits allowed (use +countrycode if needed)</small>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Information</legend>
+        <div class="row">
+          <div>
+            <label for="highSchool">High School / College Name *</label>
+            <input id="highSchool" name="highSchool" type="text" required maxlength="80">
+          </div>
+
+          <div>
+            <label for="qualification">Qualification *</label>
+            <select id="qualification" name="qualification" required>
+              <option value="">Select qualification</option>
+              <option value="hsc">HSC / A-Levels</option>
+              <option value="diploma">Diploma</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="gpa">GPA / Percentage *</label>
+            <input id="gpa" name="gpa" type="text" required maxlength="6" placeholder="e.g., 4.50 or 85%">
+          </div>
+
+          <div>
+            <label for="applyDept">Preferred Department *</label>
+            <select id="applyDept" name="applyDept" required>
+              <option value="">Choose department</option>
+              <option value="cs">Computer Science</option>
+              <option value="ee">Electrical Engineering</option>
+              <option value="me">Mechanical Engineering</option>
+              <option value="bba">Business Administration</option>
+            </select>
+          </div>
+
+          <div class="full">
+            <label>Interests (select all that apply)</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="interest" value="research"> Research</label>
+              <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+              <label><input type="checkbox" name="interest" value="volunteer"> Volunteer Work</label>
+              <label><input type="checkbox" name="interest" value="arts"> Arts & Culture</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Documents</legend>
+        <div class="row">
+          <div>
+            <label for="transcript">Transcript (PDF) *</label>
+            <input id="transcript" name="transcript" type="file" accept="application/pdf" required>
+          </div>
+
+          <div>
+            <label for="resume">Resume / CV (PDF)</label>
+            <input id="resume" name="resume" type="file" accept="application/pdf">
+          </div>
+
+          <div class="full">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" maxlength="500" placeholder="Optional information for admission panel"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <footer style="margin-top:12px;color:#6b7280;font-size:13px">© 2025 University Admissions — All Rights Reserved.</footer>
+  </div>
+</body>
+</html>
